@@ -151,8 +151,6 @@ Taking this to it's conclusion, `module load` will add software to your `$PATH`.
 software. A special note on this - depending on which version of the `module` program that is
 installed at your site, `module load` will also load required software dependencies.
 
-{% include /snippets/14/depend_demo.snip %}
-
 ## Software versioning
 
 So far, we've learned how to load and unload software packages. This is very useful. However, we
