@@ -175,18 +175,6 @@ Let's examine the output of `module avail` more closely.
 
 {% include /snippets/14/gcc_example.snip %}
 
-> ## Loading a module by default
-> 
-> Adding a set of `module load` commands to all of your scripts and having to manually load modules
-> every time you log on can be tiresome. Fortunately, there is a way of specifying a set of 
-> "default  modules" that always get loaded, regardless of whether or not you're logged on or 
-> running a job. Every user has two hidden files in their home directory: `.bashrc` and 
-> `.bash_profile` (you can see these files with `ls -la ~`). These scripts are run every time you 
-> log on or run a job. Adding a `module load` command to one of these shell scripts means that 
-> that module will always be loaded. Modify either your `.bashrc` or `.bash_profile` scripts to 
-> load a commonly used module like Python. Does your `python3 --version` job from before still 
-> need `module load` to run?
-{: .challenge}
 
 ## Installing software of our own
 
