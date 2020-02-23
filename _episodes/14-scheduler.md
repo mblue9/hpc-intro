@@ -95,19 +95,8 @@ the *queue*. To check on our job's status, we check the queue using the command
 We can see all the details of our job, most importantly that it is in the "R" or "RUNNING" state.
 Sometimes our jobs might need to wait in a queue ("PENDING") or have an error. The best way to check
 our job's status is with `{{ site.sched_status }}`. Of course, running `{{ site.sched_status }}` repeatedly to check on things can be
-a little tiresome. To see a real-time view of our jobs, we can use the `watch` command. `watch`
-reruns a given command at 2-second intervals. This is too frequent, and will likely upset your system
-administrator. You can change the interval to a more reasonable value, for example 60 seconds, with the
-`-n 60` parameter. Let's try using it to monitor another job.
+a little tiresome. We will see later how to set up email notifications that will notify us, for example if the job has completed or failed.
 
-```
-{{ site.host_prompt }} {{ site.sched_submit }} {{ site.sched_submit_options }} example-job.sh
-{{ site.host_prompt }} watch -n 60 {{ site.sched_status }} {{ site.sched_flag_user }}
-```
-{: .bash}
-
-You should see an auto-updating display of your job's status. When it finishes, it will disappear
-from the queue. Press `Ctrl-C` when you want to stop the `watch` command.
 
 ## Customising a job
 
@@ -192,7 +181,6 @@ Submit the job and wait for it to finish. Once it is has finished, check the log
 
 ```
 {{ site.host_prompt }} {{ site.sched_submit }} {{ site.sched_submit_options }} example-job.sh
-{{ site.host_prompt }} watch -n 60 {{ site.sched_status }} {{ site.sched_flag_user }}
 {% include /snippets/13/long_job_cat.snip %}
 ```
 {: .bash}
