@@ -197,6 +197,9 @@ This means that one user cannot  mess up the experience of others, the only jobs
 mistake in scheduling will be their
 own.
 
+We may be able choose different partitions for a job. Partitions are different queues on a cluster, groups of nodes that allow different types of jobs to run. Some partitions may only allow short jobs of a few hours and some may allow jobs of many days. To see the different partitions available and their maximum walltimes you can use `sinfo`.
+
+
 ## Cancelling a job
 
 Sometimes we'll make a mistake and need to cancel a job. This can be done with the `{{ site.sched_del }}`
