@@ -79,6 +79,9 @@ notice that the current hostname is also part of our prompt!)
 
 ## Nodes
 
+{% include figure.html max-width="75%" file="/fig/cluster-generic.png"
+alt="Cluster nodes" caption="" %}
+
 Individual computers that compose a cluster are typically called *nodes* (although you will also
 hear people call them *servers*, *computers* and *machines*). On a cluster, there are different
 types of nodes for different types of tasks. The node where you are right now is called the *head
@@ -202,7 +205,7 @@ been restarted.
 > (GPUs).
 {: .callout}
 
-With all of this in mind, we will now cover how to talk to the cluster's scheduler, and use it to
+With all of this in mind, we will now cover how to load software and talk to the cluster's scheduler to use it to
 start running our scripts and programs!
 
 {% include links.md %}
