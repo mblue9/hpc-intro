@@ -91,15 +91,15 @@ To see available software modules, use `module avail`
 ## Loading and unloading software
 
 To load a software module, use `module load`.
-In this example we will use Python 3.
+In this example we will use fastqc
 
-Initially, Python 3 is not loaded. 
+Initially, fastqc is not loaded. 
 We can test this by using the `which` command.
 `which` looks for programs the same way that Bash does,
 so we can use it to tell us where a particular piece of software is stored.
 
 ```
-{{ site.host_prompt }} which python3
+{{ site.host_prompt }} which fastqc
 ```
 {: .bash}
 ```
@@ -107,7 +107,7 @@ so we can use it to tell us where a particular piece of software is stored.
 ```
 {: .output}
 
-We can load the `python3` command with `module load`:
+We can load the `fastqc` command with `module load`:
 
 ```
 {% include /snippets/14/load_python.snip %}
@@ -159,8 +159,8 @@ installed at your site, `module load` will also load required software dependenc
 So far, we've learned how to load and unload software packages. This is very useful. However, we
 have not yet addressed the issue of software versioning. At some point or other, you will run into
 issues where only one particular version of some software will be suitable. Perhaps a key bugfix
-only happened in a certain version, or version X broke compatibility with a file format you use. In
-either of these example cases, it helps to be very specific about what software is loaded.
+only happened in a certain version, or version X broke compatibility with a file format you use. It is also good practice to record which software versions you use for reproducibility. In
+all of these example cases, it helps to be very specific about what software is loaded.
 
 Let's examine the output of `module avail` more closely.
 
