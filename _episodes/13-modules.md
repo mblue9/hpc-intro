@@ -3,14 +3,13 @@ title: "Accessing software"
 teaching: 30
 exercises: 15
 questions:
-- "How do we load and unload software packages?"
+- "How do we load software packages?"
 objectives:
 - "Understand how to load and use a software package."
 keypoints:
 - "Load software with `module load softwareName`"
-- "Unload software with `module purge`"
 - "The module system handles software versioning and package conflicts for you automatically."
-- "You can edit your `.bashrc` file to automatically load a software package."
+
 ---
 
 On a high-performance computing system, it is often the case that no software is loaded by default. If we want to use a
