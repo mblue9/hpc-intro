@@ -7,15 +7,13 @@ questions:
 - "How do I launch a program to run on any one node in the cluster?"
 - "How do I capture the output of a program that is run on a node in the cluster?"
 objectives:
-- "Run a simple Hello World style program on the cluster."
-- "Submit a simple Hello World style script to the cluster."
+- "Submit a simple script to the cluster."
 - "Use the batch system command line tools to monitor the execution of your job."
 - "Inspect the output and error files of your jobs."
 keypoints:
 - "The scheduler handles how compute resources are shared between users."
 - "Everything you do should be run through the scheduler."
-- "A job is just a shell script."
-- "If in doubt, request more resources than you will need."
+
 ---
 
 ## Job scheduler
@@ -52,7 +50,7 @@ The most basic use of the scheduler is to run a command non-interactively. Any c
 of commands) that you want to run on the cluster is called a *job*, and the process of using a
 scheduler to run the job is called *batch job submission*.
 
-Shown below is a minimal slurm script that runs the fastqc program on a fastq file.
+Shown below is a minimal script that runs the fastqc program on a fastq file.
 
 > ## Example script
 > 
