@@ -52,27 +52,22 @@ The most basic use of the scheduler is to run a command non-interactively. Any c
 of commands) that you want to run on the cluster is called a *job*, and the process of using a
 scheduler to run the job is called *batch job submission*.
 
-In this case, the job we want to run is just a shell script. Let's create a demo shell script to 
-run as a test.
+Shown below is a minimal slurm script that runs the fastqc program on a fastq file.
 
-> ## Creating our test job
+> ## Example script
 > 
-> Using your favorite text editor, create the following script and run it. Does it run on the
-> cluster or just our login node?
 >
 >```
 >#!/bin/bash
 >
-> echo 'This script is running on:'
-> hostname
-> sleep 120
+> 
+> TODO: add commands
+> 
 > ```
 > {: .bash}
 {: .challenge}
 
-If you completed the previous challenge successfully, you probably realise that there is a
-distinction between running the job through the scheduler and just "running it". To submit this job
-to the scheduler, we use the `{{ site.sched_submit }}` command.
+To submit this job to the scheduler, we use the `{{ site.sched_submit }}` command.
 
 ```
 [{{ site.host_prompt }} {{ site.sched_submit }} {{ site.sched_submit_options }} example-job.sh
