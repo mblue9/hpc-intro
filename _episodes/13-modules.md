@@ -172,4 +172,4 @@ Let's examine the output of `module avail` more closely.
 ```
 {: .output}
 
-{% include /snippets/14/gcc_example.snip %}
+We can see the version after the software name and specify the exact version we want to load with `module avail softwareName/version` 
