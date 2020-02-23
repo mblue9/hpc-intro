@@ -1,6 +1,6 @@
 ---
 title: "Transferring files"
-teaching: 30
+teaching: 20
 exercises: 10
 questions:
 - "How do I upload/download files to the cluster?"

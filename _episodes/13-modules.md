@@ -1,7 +1,7 @@
 ---
 title: "Accessing software"
-teaching: 30
-exercises: 15
+teaching: 15
+exercises: 10
 questions:
 - "How do we load software packages?"
 objectives:
