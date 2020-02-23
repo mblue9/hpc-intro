@@ -74,7 +74,7 @@ instructor_post_survey: "https://www.surveymonkey.com/r/instructor_training_post
 #   and:
 #     cp -r _extras/snippet_library/EPCC_Cirrus_pbs/* _includes/snippets
 #
-host_name: "vmpr-res-cluster1"
+host_name: "vmpr-res-cluster1.unix.petermac.org.au"
 host_login: "vmpr-res-cluster1.unix.petermac.org.au"
 host_location: "Peter Mac"
 host_homedir: "/home"
