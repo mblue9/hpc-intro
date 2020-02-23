@@ -175,13 +175,6 @@ Let's examine the output of `module avail` more closely.
 
 {% include /snippets/14/gcc_example.snip %}
 
-> ## Using software modules in scripts
->
-> Create a job that is able to run `python3 --version`. Remember, no software is loaded by default!
-> Running a job is just like logging on to the system (you should not assume a module loaded on the
-> login node is loaded on a compute node).
-{: .challenge}
-
 > ## Loading a module by default
 > 
 > Adding a set of `module load` commands to all of your scripts and having to manually load modules
