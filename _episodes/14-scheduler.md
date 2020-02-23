@@ -4,8 +4,8 @@ teaching: 45
 exercises: 30
 questions:
 - "What is a scheduler and why are they used?"
-- "How do I launch a program to run on any one node in the cluster?"
-- "How do I capture the output of a program that is run on a node in the cluster?"
+- "How do I launch a program to run on the cluster?"
+- "How do I capture the output of a program that is run on the cluster?"
 objectives:
 - "Submit a simple script to the cluster."
 - "Use the batch system command line tools to monitor the execution of your job."
@@ -93,7 +93,7 @@ the *queue*. To check on our job's status, we check the queue using the command
 We can see all the details of our job, most importantly that it is in the "R" or "RUNNING" state.
 Sometimes our jobs might need to wait in a queue ("PENDING") or have an error. The best way to check
 our job's status is with `{{ site.sched_status }}`. Of course, running `{{ site.sched_status }}` repeatedly to check on things can be
-a little tiresome. We will see later how to set up email notifications that will notify us, for example if the job has completed or failed.
+a little tiresome. We will see later how to set up email notifications that will notify us about any updates on the job's status, for example, if the job has completed or failed.
 
 
 ## Customising a job
